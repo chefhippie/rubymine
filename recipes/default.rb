@@ -34,3 +34,18 @@ bash "rubymine_install" do
     ::File.directory? ::File.join(node["rubymine"]["install_prefix"], node["rubymine"]["install_directory"])
   end
 end
+
+template node["rubymine"]["desktop_file"] do
+  source "app.desktop.erb"
+  owner "root"
+  group "root"
+  mode 0644
+
+  variables(
+    node["rubymine"]
+  )
+
+  only_if do
+    node["rubymine"]["desktop_file"]
+  end
+end

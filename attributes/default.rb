@@ -23,3 +23,4 @@ default["rubymine"]["file_name"] = "RubyMine-#{node["rubymine"]["version"]}.tar.
 default["rubymine"]["file_download"] = "http://download-ln.jetbrains.com/ruby/#{node["rubymine"]["file_name"]}"
 default["rubymine"]["install_directory"] = "rubymine"
 default["rubymine"]["install_prefix"] = "/opt"
+default["rubymine"]["desktop_file"] = "/usr/share/applications/rubymine.desktop"
