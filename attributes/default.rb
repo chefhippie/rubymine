@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-default["rubymine"]["version"] = "6.3.3"
+default["rubymine"]["version"] = "7.0.4"
 default["rubymine"]["directory"] = "RubyMine-#{node["rubymine"]["version"]}"
 default["rubymine"]["file_name"] = "RubyMine-#{node["rubymine"]["version"]}.tar.gz"
 default["rubymine"]["file_download"] = "http://download-ln.jetbrains.com/ruby/#{node["rubymine"]["file_name"]}"
